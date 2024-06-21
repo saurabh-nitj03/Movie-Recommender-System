@@ -1,0 +1,11 @@
+# Exported from Render on 2024-06-21T19:51:44Z
+services:
+- type: web
+  name: movie-recommender2
+  runtime: python
+  repo: https://github.com/saurabh-nitj03/new1
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: $ streamlit run app.py
+version: "1"
